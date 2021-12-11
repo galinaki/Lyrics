@@ -68,7 +68,7 @@ Include a full list of features that have been prioritized based on the `Time an
 | Set up background choice | M | 4.5hrs|   |   |
 | Debugging | H | 3.5hrs |   |   |
 | polishing design, CSS adjastement| M | 3hrs |   |   |
-| Total | H | 24hr |   |   |
+| Total | H | 29.5hr |   |   |
 
 ## Code Snippet
 
