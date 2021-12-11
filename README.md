@@ -1,4 +1,4 @@
-("https://whimsical.com/5UiBri3qYTqynVforAL6Wb")
+
 
 ## Project Name
 
@@ -16,30 +16,30 @@ Find lyric of your favorite song by song title, artist name. Save it to your fav
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+("https://whimsical.com/5UiBri3qYTqynVforAL6Wb")
 
 ### MVP/PostMVP
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+MVP 
+  Find and use external API
+  Fetch lyric text 
+  Let iser to search lyric by input song title
+  Let user choose the mood from tabs and vhange background image
+  Let user 
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
 - Find and use external api 
 - Render data on page 
-- Allow user to choose favorites 
+- Allow user to choose background 
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+
+- Add second API with random backgrounds
 
 ## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -57,14 +57,17 @@ Include a full list of features that have been prioritized based on the `Time an
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Adding Form ans fill out README | L | 3hrs| 3hrs | 3hrs |
+| HTML,CSS page setup| M | 3.3hrs |   |   |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| DOM manipulations | M | 1.5hrs |   |   |
+| Header and search/user input | M |1.5hrs |   |   |
+| JS setting up | H | 4hrs |   |   |
+| Set up background choice | M | 3hrs|   |   |
+| Debugging | H | 2hrs |   |   |
+| polishing design, CSS adjastement| M | 2hrs |   |   |
 | Total | H | 6hrs| 5hrs | 5hrs |
 
 ## Code Snippet
