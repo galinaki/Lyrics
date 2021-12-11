@@ -59,16 +59,16 @@ Include a full list of features that have been prioritized based on the `Time an
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form ans fill out README | L | 3hrs| 3hrs | 3hrs |
-| HTML,CSS page setup| M | 3.3hrs |   |   |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| DOM manipulations | M | 1.5hrs |   |   |
-| Header and search/user input | M |1.5hrs |   |   |
+| Adding Form, API searching | L | 3hrs| 3.5hrs | 3.5hrs |
+| HTML,CSS page setup| M | 3.5hrs |   |   |
+| Working with API | H | 3hrs|   |   |
+| DOM manipulations | M | 2.5hrs |   |   |
+| Header and search/user input | M |2.5hrs |   |   |
 | JS setting up | H | 4hrs |   |   |
-| Set up background choice | M | 3hrs|   |   |
-| Debugging | H | 2hrs |   |   |
-| polishing design, CSS adjastement| M | 2hrs |   |   |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Set up background choice | M | 4.5hrs|   |   |
+| Debugging | H | 3.5hrs |   |   |
+| polishing design, CSS adjastement| M | 3hrs |   |   |
+| Total | H | 24hr |   |   |
 
 ## Code Snippet
 
