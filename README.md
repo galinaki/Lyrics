@@ -20,23 +20,17 @@ Click [here](https://whimsical.com/5UiBri3qYTqynVforAL6Wb) to go to my Wireframe
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-MVP 
-  Find and use external API
-  Fetch lyric text 
-  Let iser to search lyric by input song title
-  Let user choose the mood from tabs and vhange background image
-  Let user 
-
 #### MVP 
 
 - Find and use external api 
+- Let iser to search lyric by input song title
 - Render data on page 
-- Allow user to choose background by clicking on emoji
+- Set up different backgrounds images for each emoji
+
 
 #### PostMVP  
 
-
+- Allow user to choose background by clicking on emoji
 - Add second API with random backgrounds
 
 ## Project Schedule
