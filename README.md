@@ -53,7 +53,7 @@ MVP
 
 ## Priority Matrix
 
-click [here] (https://whimsical.com/PpLRSTCxDjrs46hFrFoGJK)
+Click [here](https://whimsical.com/PpLRSTCxDjrs46hFrFoGJK)
 
 ## Timeframes
 
