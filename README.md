@@ -16,7 +16,7 @@ Find lyric of your favorite song by song title, artist name. Save it to your fav
 
 ## Wireframes
 
-Click [here]((https://whimsical.com/5UiBri3qYTqynVforAL6Wb) to go to my Wireframe profile. 
+Click [here](https://whimsical.com/5UiBri3qYTqynVforAL6Wb) to go to my Wireframe profile. 
 
 ### MVP/PostMVP
 
