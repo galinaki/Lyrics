@@ -36,6 +36,7 @@ MVP
 
 #### PostMVP  
 
+
 - Add second API with random backgrounds
 
 ## Project Schedule
@@ -50,6 +51,9 @@ MVP
 |Dec 16| MVP | Incomplete
 |Dec 17| Presentations | Incomplete
 
+## Priority Matrix
+
+click [here] (https://whimsical.com/PpLRSTCxDjrs46hFrFoGJK)
 
 ## Timeframes
 
