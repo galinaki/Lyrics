@@ -2,7 +2,7 @@
 
 ## Project Name
 
-The name of your project.
+Mood Lyric
 
 ## Project Description
 
