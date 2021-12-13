@@ -32,10 +32,9 @@ MVP
 
 - Find and use external api 
 - Render data on page 
-- Allow user to choose background 
+- Allow user to choose background by clicking on emoji
 
 #### PostMVP  
-
 
 - Add second API with random backgrounds
 
