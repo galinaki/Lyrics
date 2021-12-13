@@ -1,0 +1,17 @@
+body{
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+.links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+h1{
+  display: center;
+}
+.mood {
+  display: flex;
+}

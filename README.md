@@ -23,7 +23,7 @@ Click [here](https://whimsical.com/5UiBri3qYTqynVforAL6Wb) to go to my Wireframe
 #### MVP 
 
 - Find and use external api 
-- Let iser to search lyric by input song title
+- Let user to search lyric by input song title
 - Render data on page 
 - Set up different backgrounds images for each emoji
 
