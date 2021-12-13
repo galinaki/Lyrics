@@ -72,7 +72,7 @@ Include a full list of features that have been prioritized based on the `Time an
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+In progress...
 
 ```
 function reverse(string) {
