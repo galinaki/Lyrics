@@ -11,24 +11,25 @@ async function fetchLyrics(artist, title) {
     const lyricsText = res.data.lyrics
     console.log(lyricsText)
 
-
-    function showLyricsText(data) {
-
-      const text = document.createElement("h5")
-      text.innerText = `${lyricsText}`
-      lyrics.appendChild(text)
-    }
+    lyricsText.forEach((lyricsTextObj) => {
+      showLyricsText(lyricsTextObj)
+    })
   } catch (error) {
     console.log("ERROR")
   }
 }
 
+function showLyricsText(data) {
+  const text = document.createElement("h5")
+  text.innerText = `${lyricsText}`
+  lyrics.appendChild(text)
+}
 
 //console.log(fetchLyrics("adele", "hello"))
 
 
-const searchForm = document.querySelector("#song-title")
-const searchInput = document.querySelector("song-title")
+const searchForm = document.querySelector(".search-list")
+const searchInput = document.querySelector("#song-title")
 
 searchForm.addEventListener("submit", handleSubmit)
 
@@ -44,3 +45,12 @@ function handleSubmit(e) {
 function removeText() {
   lyrics.innerText = ""
 }
+
+// function suggestions() {
+//   let variant= searchInput.value()
+//   if (!variant) {
+//     removeText()
+//     return
+//   } console.log(`Search possible variant for ${variant}`)
+//   $.getJSON(`${domain}/suggest/${variant}`)
+// } 
