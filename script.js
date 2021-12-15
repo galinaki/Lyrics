@@ -68,32 +68,56 @@ function displayErrorMessage() {
 document.getElementById("romantic").onclick = backgroundRomantic
 function backgroundRomantic() {
   document.body.style.backgroundImage = "url(https://static.vecteezy.com/system/resources/thumbnails/003/627/000/small_2x/red-heart-seamless-background-free-vector.jpg)"
+  let romantic = document.querySelector(".lyrics-text")
+  romantic.style.backgroundColor = "rgb(238, 172, 208, 0.5)"
+
 }
 
 document.getElementById("sad").onclick = backgroundSad
 function backgroundSad() {
   document.body.style.backgroundImage = "url(https://thumbs.dreamstime.com/b/depression-boy-doodles-heartbreak-doodle-sad-boy-sad-depressed-boy-sitting-depression-boy-doodle-heartbreak-sad-doodle-man-160858233.jpg)"
   let sad = document.querySelector(".lyrics-text")
-  sad.style.backgroundColor = "rgb(247, 229, 207)"
-  sad.style.opacity = "0.8"
+  sad.style.backgroundColor = "rgb(247, 229, 207, 0.5)"
+  // sad.style.opacity = "0.8"
 }
 
 document.getElementById("calm").onclick = backgroundCalm
 function backgroundCalm() {
+  let calm = document.querySelector(".lyrics-text")
+  calm.style.backgroundColor = "rgb(254, 249, 231, 0.7)"
   document.body.style.backgroundImage = "url(https://previews.123rf.com/images/talanaart/talanaart1903/talanaart190300022/124173538-seamless-cute-colorful-pattern-with-light-birds-feathers-the-design-creates-calm-light-mood-the-desi.jpg)"
 }
 
 document.getElementById("happy").onclick = backgroundHappy
 function backgroundHappy() {
+  let happy = document.querySelector(".lyrics-text")
+  happy.style.backgroundColor = "rgb(253, 254, 254 , 0.9)"
   document.body.style.backgroundImage = "url(https://img.freepik.com/free-vector/cute-funny-bee-flowers-cartoon-kids-seamless-pattern-vector-hand-drawn-cartoon-kawaii-character-illustration-icon-cute-bee-honey-flower-cartoon-kawaii-child-seamless-pattern-concept_92289-3280.jpg?size=626&ext=jpg)"
 }
 
 document.getElementById("inspired").onclick = backgroundInspired
 function backgroundInspired() {
+  let inspired = document.querySelector(".lyrics-text")
+  inspired.style.backgroundColor = "rgb(212, 230, 241, 0.6)"
   document.body.style.backgroundImage = "url(https://st2.depositphotos.com/4155807/11835/v/950/depositphotos_118353114-stock-illustration-funny-childish-vector-seamless-texture.jpg)"
 }
 
 document.getElementById("grumpy").onclick = backgroundGrumpy
+let grumpy = document.querySelector(".lyrics-text")
+grumpy.style.backgroundColor = "rgb(235, 222, 240, 0.6)"
 function backgroundGrumpy() {
   document.body.style.backgroundImage = "url(https://thumbs.dreamstime.com/b/funny-vector-set-grumpy-cat-funny-vector-set-grumpy-cat-165375919.jpg)"
 }
+
+document.getElementById("likeSign").onclick = like
+function like() {
+  let imageID = document.getElementById("like")
+  imageID.value = "Liked"
+  if (imageID.src.match("https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Heart-Love-Like-512.png")) {
+    imageID.src = "https://cdn4.iconfinder.com/data/icons/set-1/32/__1-256.png";
+
+  } else {
+    imageID.src = "https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Heart-Love-Like-512.png"
+  }
+
+} 

@@ -2,11 +2,11 @@
 
 ## Project Name
 
-Mood Lyric
+Lyric Mood 
 
 ## Project Description
 
-Find lyric of your favorite song by song title, artist name. Save it to your favorite.
+Find lyric of your favorite song by song title, artist name. Choose a background.
 
 ## API and Data Sample
 
