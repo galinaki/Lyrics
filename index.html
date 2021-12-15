@@ -28,18 +28,16 @@
     <h1>Lyric mood</h1>
   </header>
   <form class="search-list">
-    <input type="text" id="song-artist" placeholder="type artist">
+    <input type="text" id="song-artist" placeholder="type artist name">
     <input type="text" id="song-title" placeholder="type song title">
     <button id="search-button">Search</button>
   </form>
   <div class="main">
-    <div class="mood">
+    <div class="mood" id="mood1">
       <ul>
-        <li>Romantic</li>
-        <li>Sad</li>
-        <li>Happy</li>
-        <li>Inspired</li>
-        <li>Grumpy</li>
+        <li id="romantic">Romantic 🥰</li>
+        <li id="sad">Sad 😔</li>
+        <li id="calm">Calm 😌</li>
       </ul>
     </div>
 
@@ -47,24 +45,23 @@
 
     </div>
 
-    <div class="test">
+    <div class="mood" id="mood2">
       <ul>
-        <li>Romantic</li>
-        <li>Sad</li>
-        <li>Happy</li>
-        <li>Inspired</li>
-        <li>Grumpy</li>
+        <li id="happy">😁 Happy</li>
+        <li id="inspired">🤩 Inspired</li>
+        <li id="grumpy">😠 Grumpy</li>
       </ul>
     </div>
 
   </div>
 
 
-  <footer>
-    Like <img id="like"
-      src="https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Heart-Love-Like-512.png"
-      alt="heart">
-  </footer>
+
 </body>
+
+<footer>
+  Like <img id="like"
+    src="https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Heart-Love-Like-512.png" alt="heart">
+</footer>
 
 </html>
