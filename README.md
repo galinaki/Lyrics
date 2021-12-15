@@ -37,9 +37,9 @@ Click [here](https://whimsical.com/5UiBri3qYTqynVforAL6Wb) to go to my Wireframe
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Dec 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|Dec 13| Project Approval | Incomplete
-|Dec 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Dec 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Completed
+|Dec 13| Project Approval | Completed
+|Dec 13| Core Application Structure (HTML, CSS, etc.) | Completed
 |Dec 14| Pseudocode / actual code | Incomplete
 |Dec 15| Initial Clickable Model  | Incomplete
 |Dec 16| MVP | Incomplete
@@ -53,13 +53,13 @@ Click [here](https://whimsical.com/PpLRSTCxDjrs46hFrFoGJK)
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form, API searching | L | 3hrs| 3.5hrs | 3.5hrs |
-| HTML,CSS page setup| M | 3.5hrs |   |   |
-| Working with API | H | 3hrs|   |   |
-| DOM manipulations | M | 2.5hrs |   |   |
-| Header and search/user input | M |2.5hrs |   |   |
-| JS setting up | H | 4hrs |   |   |
-| Set up background choice | M | 4.5hrs|   |   |
+| Adding Form, API searching | L | 3hrs| 5.5hrs | 4.5hrs |
+| HTML,CSS page setup| M | 3.5hrs |3hrs | 3hrs|
+| Working with API | H | 3hrs|  3hrs |  3hrs |
+| DOM manipulations | M | 2.5hrs | 2.5hrs | 2hrs |
+| Header and search/user input | M |2.5hrs | 3.5hrs  |  3.5hrs |
+| JS setting up | H | 4hrs |  5.5hrs | 5hours |
+| Set up background choice | M | 4.5hrs|  4.5hrs | 4hrs  |
 | Debugging | H | 3.5hrs |   |   |
 | polishing design, CSS adjastement| M | 3hrs |   |   |
 | Total | H | 29.5hr |   |   |
