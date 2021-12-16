@@ -161,42 +161,41 @@ document.getElementById("romantic").onclick = backgroundRomantic
 function backgroundRomantic() {
   document.body.style.backgroundImage = "url(https://i.ytimg.com/vi/QJCYkdIMtLQ/maxresdefault.jpg)"
   let romantic = document.querySelector(".lyrics-text")
-  romantic.style.backgroundColor = "rgb(238, 172, 208, 0.5)"
-
+  romantic.style.backgroundColor = "rgb(238, 172, 208, 0.4)"
 }
 
 document.getElementById("sad").onclick = backgroundSad
 function backgroundSad() {
   document.body.style.backgroundImage = "url(https://xenzone.com/wp-content/uploads/2020/03/AdobeStock_181640661-scaled.jpeg)"
   let sad = document.querySelector(".lyrics-text")
-  sad.style.backgroundColor = "rgb(247, 229, 207, 0.5)"
+  sad.style.backgroundColor = "rgb(247, 229, 207, 0.4)"
   // sad.style.opacity = "0.8"
 }
 
 document.getElementById("calm").onclick = backgroundCalm
 function backgroundCalm() {
   let calm = document.querySelector(".lyrics-text")
-  calm.style.backgroundColor = "rgb(254, 249, 231, 0.7)"
+  calm.style.backgroundColor = "rgb(254, 249, 231, 0.4)"
   document.body.style.backgroundImage = "url(https://images.unsplash.com/photo-1499810631641-541e76d678a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FsbXxlbnwwfHwwfHw%3D&w=1000&q=80)"
 }
 
 document.getElementById("happy").onclick = backgroundHappy
 function backgroundHappy() {
   let happy = document.querySelector(".lyrics-text")
-  happy.style.backgroundColor = "rgb(253, 254, 254 , 0.6)"
+  happy.style.backgroundColor = "rgb(253, 254, 254 , 0.4)"
   document.body.style.backgroundImage = "url(https://wallpapercave.com/wp/wp3226105.jpg)"
 }
 
 document.getElementById("inspired").onclick = backgroundInspired
 function backgroundInspired() {
   let inspired = document.querySelector(".lyrics-text")
-  inspired.style.backgroundColor = "rgb(212, 230, 241, 0.6)"
+  inspired.style.backgroundColor = "rgb(212, 230, 241, 0.4)"
   document.body.style.backgroundImage = "url(https://intermountainhealthcare.org/-/media/images/modules/blog/posts/2018/05/exercise-motivation.jpg?mw=1600)"
 }
 
 document.getElementById("grumpy").onclick = backgroundGrumpy
 let grumpy = document.querySelector(".lyrics-text")
-grumpy.style.backgroundColor = "rgb(235, 222, 240, 0.6)"
+grumpy.style.backgroundColor = "rgb(235, 222, 240, 0.4)"
 function backgroundGrumpy() {
   document.body.style.backgroundImage = "url(https://wallpapercave.com/wp/wp4344879.jpg)"
 }
