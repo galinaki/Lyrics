@@ -2,6 +2,7 @@ body{
   position: relative;
   margin: 0 auto;
   background-color: bisque;
+  height: 100vh;
 }
 h1{
   text-align: center;
@@ -26,7 +27,7 @@ h3{
   justify-content: flex-end;
   background-color: rgb(222, 135, 183);
 }
-#links{
+#github, #linkedin{
   width: 25px;
   padding: 5px;
 }
@@ -66,10 +67,10 @@ li{
   text-align: center;
   /* padding: 5px 50px; */
 }
-#song-artist, #song-title{
+#input{
   font-family: 'Fugaz One', cursive;
   font-size: 16px;
-  width: 150px;
+  width: 200px;
   border-radius: 25px;
 }
 button{
@@ -89,9 +90,21 @@ footer{
   bottom: 20px;
   justify-content: flex-end;
 }
-
-
-
+#like:hover{
+  zoom: 150%;
+} 
+button:hover{
+  zoom: 120%
+}
+#github:hover{
+  zoom: 120%
+}
+#linkedin:hover{
+  zoom: 120%
+}
+.songs, p, h4{
+  font-family: 'Kaushan Script', cursive;
+}
 
 @media only screen and (max-width: 600px){
   body {

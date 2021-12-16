@@ -1,51 +1,119 @@
-const domain = "https://api.lyrics.ovh/v1"
+const domain = "https://api.lyrics.ovh"
 
-let lyrics = document.querySelector(".lyrics-text")
-let songInput = document.querySelector("#song-title")
+// let lyrics = document.querySelector(".lyrics-text")
+// let songInput = document.querySelector("#song-title")
 
-async function fetchLyrics(artist, title) {
-  try {
-    let url = `${domain}/${artist}/${title}`
-    const res = await axios.get(url)
+// async function fetchLyrics(artist, title) {
+//   try {
+//     let url = `${domain}/${artist}/${title}`
+//     const res = await axios.get(url)
 
-    const lyricsText = res.data.lyrics
-    console.log(res.data)
+//     const lyricsText = res.data.lyrics
+//     console.log(res.data)
 
-    // lyricsText.forEach((lyricsText) => {
-    showLyricsText(lyricsText)
-    // })
-  } catch (error) {
-    displayErrorMessage()
-  }
-}
+//     // lyricsText.forEach((lyricsText) => {
+//     showLyricsText(lyricsText)
+//     // })
+//   } catch (error) {
+//     displayErrorMessage()
+//   }
+// }
 
-function showLyricsText(data) {
-  console.log(data)
-  const text = document.createElement("h5")
-  text.innerText = `${data}`
-  lyrics.appendChild(text)
-}
+// function showLyricsText(data) {
+//   console.log(data)
+//   const text = document.createElement("h5")
+//   text.innerText = `${data}`
+//   lyrics.appendChild(text)
+// }
 
-//console.log(fetchLyrics("adele", "hello"))
+// //console.log(fetchLyrics("adele", "hello"))
 
+
+// const searchForm = document.querySelector(".search-list")
+// const searchInput = document.querySelector("#song-artist")
+// const searchTitle = document.querySelector("#song-title")
+
+// searchForm.addEventListener("submit", handleSubmit)
+
+// function handleSubmit(e) {
+//   e.preventDefault()
+//   console.log(searchInput.value)
+//   let inputValue = searchInput.value
+//   searchInput.value = ""
+//   let searchValue = searchTitle.value
+//   searchTitle.value = ""
+
+//   fetchLyrics(inputValue, searchValue)
+//   removeText()
+// }
 
 const searchForm = document.querySelector(".search-list")
-const searchInput = document.querySelector("#song-artist")
-const searchTitle = document.querySelector("#song-title")
+const searchInput = document.querySelector("#input")
+const result = document.querySelector(".lyrics-text")
 
-searchForm.addEventListener("submit", handleSubmit)
-
-function handleSubmit(e) {
+searchForm.addEventListener("submit", e => {
   e.preventDefault()
-  console.log(searchInput.value)
-  let inputValue = searchInput.value
-  searchInput.value = ""
-  let searchValue = searchTitle.value
-  searchTitle.value = ""
-
-  fetchLyrics(inputValue, searchValue)
-  removeText()
+  let searchValue = searchInput.value.trim()
+  if (!searchValue) {
+    alert("Nothing to search. Please input below")
+  } else {
+    beginToSearch(searchValue)
+  }
+})
+///search function
+async function beginToSearch(searchValue) {
+  let searchResult = await fetch(`${domain}/suggest/${searchValue}`)
+  const data = await searchResult.json()
+  console.log(data)
+  displayData(data)
 }
+//display search result
+function displayData(data) {
+  result.innerHTML = `
+  <ul class = "songs">
+    ${data.data
+      .map(song => ` <li>
+                    <div>
+                    <strong>${song.artist.name}</strong> - ${song.title}
+                    </div>
+                    <span data-artist="${song.artist.name}"
+                    data-songtitle="${song.title}">Get Lyrics</span>
+                  </li>`
+      )
+      .join("")
+    }
+  </ul>
+  `;
+}
+//get lyrics text
+result.addEventListener("click", e => {
+  const clickedElement = e.target
+  if (clickedElement.tagName === 'SPAN') {
+    const artist = clickedElement.getAttribute("data-artist")
+    const songTitle = clickedElement.getAttribute("data-songtitle")
+
+    showLyrics(artist, songTitle)
+  }
+})
+
+async function showLyrics(artist, songTitle) {
+  const response = await fetch(`${domain}/v1/${artist}/${songTitle}`)
+  const data = await response.json()
+  const lyrics = data.lyrics.replace(/(\r\n|\r|\n)/g, '<br>')
+  result.innerHTML = `<h4>
+                        <strong>${artist}</strong> - ${songTitle}
+                      </h4>
+                      <p>${lyrics}</p>`
+
+}
+// The RegEx is used with the replace() method to replace all the line breaks in string with <br>.
+// The pattern /(\r\n|\r|\n)/ checks for line breaks.
+// The pattern /g checks across all the string occurrences.
+
+
+
+
+
 
 function removeText() {
   lyrics.innerText = ""
