@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fugaz+One&family=Palanquin&display=swap"
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Kaushan+Script&family=Palanquin&display=swap"
     rel="stylesheet">
 </head>
 
@@ -28,8 +30,21 @@
 
 
     </div>
-    <h1>Lyric mood</h1>
-    <h3 class="anim-item">find lyrics of your favorite song</h3>
+    <div class="page-title">
+      <h1>Lyric mood</h1>
+      <h3 class="anim-item">find lyrics of your favorite song</h3>
+    </div>
+    <div class="mood">
+      <ul>
+        <li class="_mood" id="romantic">🥰</li>
+        <li class="_mood" id="sad">😔</li>
+        <li class="_mood" id="calm">😌</li>
+        <li class="_mood" id="happy">😁</li>
+        <li class="_mood" id="inspired">🤩</li>
+        <li class="_mood" id="grumpy">😠</li>
+      </ul>
+      <h5 id="click">Click on any emoji</h5>
+    </div>
   </header>
   <!-- <form class="search-list">
     <input type="text" id="song-artist" placeholder="type artist name">
@@ -40,38 +55,14 @@
     <input type="text" id="input" placeholder="type song title or artist name">
     <button id="search-button">Search</button>
   </form>
-  <div class="main">
-    <div class="mood" id="mood1">
-      <ul>
-        <li id="romantic">Romantic 🥰</li>
-        <li id="sad">Sad 😔</li>
-        <li id="calm">Calm 😌</li>
-      </ul>
-    </div>
 
-    <div class="lyrics-text">
-
-    </div>
-
-    <div class="mood" id="mood2">
-      <ul>
-        <li id="happy">😁 Happy</li>
-        <li id="inspired">🤩 Inspired</li>
-        <li id="grumpy">😠 Grumpy</li>
-      </ul>
-    </div>
+  <div class="lyrics-text">
 
   </div>
-
 
 
 </body>
 
-<footer>
-  <div id="likeSign">Like <img id="like"
-      src="https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Heart-Love-Like-512.png"
-      alt="heart">
-  </div>
-</footer>
+
 
 </html>

@@ -55,7 +55,7 @@ searchForm.addEventListener("submit", e => {
   e.preventDefault()
   let searchValue = searchInput.value.trim()
   if (!searchValue) {
-    alert("Nothing to search. Please input below")
+    displayErrorMessage()
   } else {
     beginToSearch(searchValue)
   }
@@ -76,7 +76,7 @@ function displayData(data) {
                     <div>
                     <strong>${song.artist.name}</strong> - ${song.title}
                     </div>
-                    <span data-artist="${song.artist.name}"
+                    <span id="choise" data-artist="${song.artist.name}"
                     data-songtitle="${song.title}">Get Lyrics</span>
                   </li>`
       )
@@ -97,22 +97,27 @@ result.addEventListener("click", e => {
 })
 
 async function showLyrics(artist, songTitle) {
-  const response = await fetch(`${domain}/v1/${artist}/${songTitle}`)
-  const data = await response.json()
-  const lyrics = data.lyrics.replace(/(\r\n|\r|\n)/g, '<br>')
-  result.innerHTML = `<h4>
+  try {
+    const response = await fetch(`${domain}/v1/${artist}/${songTitle}`)
+    const data = await response.json()
+    const lyrics = data.lyrics.replace(/(\r\n|\r|\n)/g, '<br>')
+    result.innerHTML = `<h4>
                         <strong>${artist}</strong> - ${songTitle}
                       </h4>
-                      <p>${lyrics}</p>`
-
+                      <p>${lyrics}</p>
+                      <footer>
+    <div id="likeSign">Like <img id="like"
+        src="https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Heart-Love-Like-512.png"
+        alt="heart">
+    </div>
+  </footer>`
+  } catch (error) {
+    displayErrorMessage
+  }
 }
 // The RegEx is used with the replace() method to replace all the line breaks in string with <br>.
 // The pattern /(\r\n|\r|\n)/ checks for line breaks.
 // The pattern /g checks across all the string occurrences.
-
-
-
-
 
 
 function removeText() {
@@ -132,10 +137,17 @@ function displayErrorMessage() {
 }
 
 
-/// background change
+//background change
+document.getElementById("click").onclick = clickDefault
+function clickDefault() {
+  document.body.style.backgroundImage = "url(https://i.pinimg.com/originals/59/9c/f9/599cf9614e51cf87cf25818bbca3226d.png)"
+}
+
+
+
 document.getElementById("romantic").onclick = backgroundRomantic
 function backgroundRomantic() {
-  document.body.style.backgroundImage = "url(https://static.vecteezy.com/system/resources/thumbnails/003/627/000/small_2x/red-heart-seamless-background-free-vector.jpg)"
+  document.body.style.backgroundImage = "url(https://i.ytimg.com/vi/QJCYkdIMtLQ/maxresdefault.jpg)"
   let romantic = document.querySelector(".lyrics-text")
   romantic.style.backgroundColor = "rgb(238, 172, 208, 0.5)"
 
@@ -143,7 +155,7 @@ function backgroundRomantic() {
 
 document.getElementById("sad").onclick = backgroundSad
 function backgroundSad() {
-  document.body.style.backgroundImage = "url(https://thumbs.dreamstime.com/b/depression-boy-doodles-heartbreak-doodle-sad-boy-sad-depressed-boy-sitting-depression-boy-doodle-heartbreak-sad-doodle-man-160858233.jpg)"
+  document.body.style.backgroundImage = "url(https://xenzone.com/wp-content/uploads/2020/03/AdobeStock_181640661-scaled.jpeg)"
   let sad = document.querySelector(".lyrics-text")
   sad.style.backgroundColor = "rgb(247, 229, 207, 0.5)"
   // sad.style.opacity = "0.8"
@@ -153,28 +165,28 @@ document.getElementById("calm").onclick = backgroundCalm
 function backgroundCalm() {
   let calm = document.querySelector(".lyrics-text")
   calm.style.backgroundColor = "rgb(254, 249, 231, 0.7)"
-  document.body.style.backgroundImage = "url(https://previews.123rf.com/images/talanaart/talanaart1903/talanaart190300022/124173538-seamless-cute-colorful-pattern-with-light-birds-feathers-the-design-creates-calm-light-mood-the-desi.jpg)"
+  document.body.style.backgroundImage = "url(https://images.unsplash.com/photo-1499810631641-541e76d678a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FsbXxlbnwwfHwwfHw%3D&w=1000&q=80)"
 }
 
 document.getElementById("happy").onclick = backgroundHappy
 function backgroundHappy() {
   let happy = document.querySelector(".lyrics-text")
   happy.style.backgroundColor = "rgb(253, 254, 254 , 0.9)"
-  document.body.style.backgroundImage = "url(https://img.freepik.com/free-vector/cute-funny-bee-flowers-cartoon-kids-seamless-pattern-vector-hand-drawn-cartoon-kawaii-character-illustration-icon-cute-bee-honey-flower-cartoon-kawaii-child-seamless-pattern-concept_92289-3280.jpg?size=626&ext=jpg)"
+  document.body.style.backgroundImage = "url(https://wallpapercave.com/wp/wp3226105.jpg)"
 }
 
 document.getElementById("inspired").onclick = backgroundInspired
 function backgroundInspired() {
   let inspired = document.querySelector(".lyrics-text")
   inspired.style.backgroundColor = "rgb(212, 230, 241, 0.6)"
-  document.body.style.backgroundImage = "url(https://st2.depositphotos.com/4155807/11835/v/950/depositphotos_118353114-stock-illustration-funny-childish-vector-seamless-texture.jpg)"
+  document.body.style.backgroundImage = "url(https://intermountainhealthcare.org/-/media/images/modules/blog/posts/2018/05/exercise-motivation.jpg?mw=1600)"
 }
 
 document.getElementById("grumpy").onclick = backgroundGrumpy
 let grumpy = document.querySelector(".lyrics-text")
 grumpy.style.backgroundColor = "rgb(235, 222, 240, 0.6)"
 function backgroundGrumpy() {
-  document.body.style.backgroundImage = "url(https://thumbs.dreamstime.com/b/funny-vector-set-grumpy-cat-funny-vector-set-grumpy-cat-165375919.jpg)"
+  document.body.style.backgroundImage = "url(https://wallpapercave.com/wp/wp4344879.jpg)"
 }
 
 document.getElementById("likeSign").onclick = like
@@ -187,5 +199,5 @@ function like() {
   } else {
     imageID.src = "https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Heart-Love-Like-512.png"
   }
+}
 
-} 

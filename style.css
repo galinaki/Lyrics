@@ -1,94 +1,86 @@
 body{
-  position: relative;
+  /* position: relative; */
   margin: 0 auto;
-  background-color: bisque;
   height: 100vh;
+  background-image: url(https://i.pinimg.com/originals/59/9c/f9/599cf9614e51cf87cf25818bbca3226d.png);
+ background-position: center;
+ background-repeat: none;
+ background-attachment: fixed;
+ background-size: cover;
 }
-h1{
+header{
   text-align: center;
-  background-color: rgb(222, 135, 183);
+  background-color: rgb(222, 135, 183, 0.5);
   font-family: 'Fugaz One', cursive;
-  font-size: 60px;
-  margin-top: -25px;
+  font-size: 25px;
+  margin-top: -35px;
+  height: 120px;
 }
 h3{
-  text-align: center;
-  background-color: rgb(222, 135, 183);
-  font-family: 'Fugaz One', cursive;
-  font-size: 20px;
-  margin-top: -50px;
-}
-.search-list{
-  text-align: center;
+  margin-top: -40px;
 }
 .links{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  background-color: rgb(222, 135, 183);
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 #github, #linkedin{
   width: 25px;
   padding: 5px;
 }
-
-.main{
-  display: flex;
-  justify-content: space-between;
-    flex-direction: row;
-    margin: 20px 0 10px 0;
-}
 .mood {
   font-family: 'Fugaz One', cursive;
-  font-size: 29px;
-  background-color: rgb(247, 220, 187, 0.5);
-  height: fit-content;
-  width: fit-content;
+  font-size: 19px;
+  /* height: fit-content;
+  width: fit-content; */
   color: black;
-}
-#mood1{
-  text-align: right;
-}
-#mood2 {
-  text-align: left;
-  /* margin-right: 50px; */
-}
-ul{
-  list-style-type: none;
+  position: absolute;
+  top: -10px;
+  left: -10px;
   
 }
-li{
-  padding: 15px 0 15px 0;
-  z-index: 2;
+._mood{
+  display: inline-block;
+  padding: 5px;
 }
-.lyrics-text{
-  font-family: 'Palanquin', sans-serif;
-  font-size: 20px;
+h5{
+  margin-top: -10px;
+}
+.search-list{
   text-align: center;
-  /* padding: 5px 50px; */
+  padding: 10px 0;
 }
+
+.lyrics-text{
+  font-family: 'Paanquin', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
+  height: fit-content;
+}
+li{
+  list-style: none;
+}
+#choise:hover{
+  color: brown;
+  zoom: 110%;
+}
+
 #input{
   font-family: 'Fugaz One', cursive;
   font-size: 16px;
-  width: 200px;
+  width: 250px;
   border-radius: 25px;
+  opacity: 80%;
 }
 button{
   font-family: 'Fugaz One', cursive;
   font-size: 16px;
   border-radius: 25px;
+  opacity: 90%;
 }
-
-
 #like {
   width: 20px;
-}
-
-footer{
-  
-  text-align: center;
-  bottom: 20px;
-  justify-content: flex-end;
 }
 #like:hover{
   zoom: 150%;
@@ -106,49 +98,31 @@ button:hover{
   font-family: 'Kaushan Script', cursive;
 }
 
+footer{
+  /* position:absolute; */
+   bottom:0;
+   width:100%;
+   text-align: center;
+   text-align: bottom;
+}
+#likeSign{
+  color: red;
+}
+
+/* ///////media/////////// */
 @media only screen and (max-width: 600px){
   body {
   font-size: 15px;
   }
-h1{
-  font-size: 20px;
+header{
+  font-size: 12px;
+  height: fit-content;
+  margin-top: -10px;
 }
 h3{
-  margin-top: -15px;
-  color: #2E4053 ;
-}
-.main{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.lyrics-text{
-order: 1;
+  margin: 0%;
 }
 .mood{
-font-size: 17px;
-padding: 0 15px;
-margin: 0;
-height: fit-content;
-display: flex;
-flex-direction: row;
-}
-
-#mood1{
-  /* margin-right: 10px; */
-  width: fit-content;
-  /* float: inline-end; */
-  order:2;
-  /* align-self: flex-end; */
-  /* position: absolute; */
- object-position: bottom;
- align-self: center;
-}
-#mood2{
-  width: fit-content;
-  order:3;
-  /* position: absolute; */
-  object-position: bottom;
-  align-self: center;
-}
+  position: relative;
+  bottom: 0;
 }
