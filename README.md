@@ -40,9 +40,9 @@ Click [here](https://whimsical.com/5UiBri3qYTqynVforAL6Wb) to go to my Wireframe
 |Dec 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Completed
 |Dec 13| Project Approval | Completed
 |Dec 13| Core Application Structure (HTML, CSS, etc.) | Completed
-|Dec 14| Pseudocode / actual code | Incomplete
-|Dec 15| Initial Clickable Model  | Incomplete
-|Dec 16| MVP | Incomplete
+|Dec 14| Pseudocode / actual code | Completed
+|Dec 15| Initial Clickable Model  | Completed
+|Dec 16| MVP | Completed
 |Dec 17| Presentations | Incomplete
 
 ## Priority Matrix
