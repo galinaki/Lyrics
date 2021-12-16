@@ -114,6 +114,7 @@ async function showLyrics(artist, songTitle) {
   } catch (error) {
     displayErrorMessage
   }
+
   document.getElementById("likeSign").onclick = like
   function like() {
     let imageID = document.getElementById("like")
