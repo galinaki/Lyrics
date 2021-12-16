@@ -62,7 +62,7 @@ Click [here](https://whimsical.com/PpLRSTCxDjrs46hFrFoGJK)
 | Set up background choice | M | 4.5hrs|  4.5hrs | 4hrs  |
 | Debugging | H | 3.5hrs | 3.5hrs  | 3.5hrs  |
 | polishing design, CSS adjastement| M | 3hrs |  4hrs | 4hrs  |
-| Total | H | 29.5hr |   |   |
+| Total | H | 29.5hr | 35hrs  | 33.5hrs  |
 
 ## Code Snippet
 
