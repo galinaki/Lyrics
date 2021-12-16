@@ -100,13 +100,15 @@ button:hover{
 
 footer{
   /* position:absolute; */
-   bottom:0;
+   bottom:10px;
    width:100%;
    text-align: center;
    text-align: bottom;
+   padding-bottom: 10px;
 }
 #likeSign{
   color: red;
+  font-family: 'Fugaz One', cursive;
 }
 
 /* ///////media/////////// */

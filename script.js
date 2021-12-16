@@ -114,6 +114,17 @@ async function showLyrics(artist, songTitle) {
   } catch (error) {
     displayErrorMessage
   }
+  document.getElementById("likeSign").onclick = like
+  function like() {
+    let imageID = document.getElementById("like")
+    imageID.value = "Liked"
+    if (imageID.src.match("https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Heart-Love-Like-512.png")) {
+      imageID.src = "https://cdn4.iconfinder.com/data/icons/set-1/32/__1-256.png";
+
+    } else {
+      imageID.src = "https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Heart-Love-Like-512.png"
+    }
+  }
 }
 // The RegEx is used with the replace() method to replace all the line breaks in string with <br>.
 // The pattern /(\r\n|\r|\n)/ checks for line breaks.
@@ -171,7 +182,7 @@ function backgroundCalm() {
 document.getElementById("happy").onclick = backgroundHappy
 function backgroundHappy() {
   let happy = document.querySelector(".lyrics-text")
-  happy.style.backgroundColor = "rgb(253, 254, 254 , 0.9)"
+  happy.style.backgroundColor = "rgb(253, 254, 254 , 0.6)"
   document.body.style.backgroundImage = "url(https://wallpapercave.com/wp/wp3226105.jpg)"
 }
 
@@ -189,15 +200,5 @@ function backgroundGrumpy() {
   document.body.style.backgroundImage = "url(https://wallpapercave.com/wp/wp4344879.jpg)"
 }
 
-document.getElementById("likeSign").onclick = like
-function like() {
-  let imageID = document.getElementById("like")
-  imageID.value = "Liked"
-  if (imageID.src.match("https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Heart-Love-Like-512.png")) {
-    imageID.src = "https://cdn4.iconfinder.com/data/icons/set-1/32/__1-256.png";
 
-  } else {
-    imageID.src = "https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Heart-Love-Like-512.png"
-  }
-}
 

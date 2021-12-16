@@ -60,19 +60,31 @@ Click [here](https://whimsical.com/PpLRSTCxDjrs46hFrFoGJK)
 | Header and search/user input | M |2.5hrs | 3.5hrs  |  3.5hrs |
 | JS setting up | H | 4hrs |  5.5hrs | 5hours |
 | Set up background choice | M | 4.5hrs|  4.5hrs | 4hrs  |
-| Debugging | H | 3.5hrs |   |   |
-| polishing design, CSS adjastement| M | 3hrs |   |   |
+| Debugging | H | 3.5hrs | 3.5hrs  | 3.5hrs  |
+| polishing design, CSS adjastement| M | 3hrs |  4hrs | 4hrs  |
 | Total | H | 29.5hr |   |   |
 
 ## Code Snippet
 
-In progress...
-
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
+async function showLyrics(artist, songTitle) {
+  try {
+    const response = await fetch(`${domain}/v1/${artist}/${songTitle}`)
+    const data = await response.json()
+    const lyrics = data.lyrics.replace(/(\r\n|\r|\n)/g, '<br>')
+    result.innerHTML = `<h4>
+                        <strong>${artist}</strong> - ${songTitle}
+                      </h4>
+                      <p>${lyrics}</p>
+                      <footer>
+    <div id="likeSign">Like <img id="like"
+        src="https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Heart-Love-Like-512.png"
+        alt="heart">
+    </div>
+  </footer>`
+  } catch (error) {
+    displayErrorMessage
+  }
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+ 
+ A lot of changes were made during stylisation to improve functionality, about 50% of JS codes. So it follow restyling in general.
