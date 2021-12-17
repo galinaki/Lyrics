@@ -17,10 +17,19 @@ header{
   max-height: 100px;
 }
 .undertitle{
-  transform: translate(0px,120%);
+  transform: translate(0px,160%);
   opacity: 0;
   transition: all 0.8s ease 0s;
+
+  animation-name: animtitle;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
+@keyframes animtitle {
+  from{opacity: 0.2;}
+  to {opacity: 1;}
+}
+
 .undertitle._active{
   transform: translate(0px, 0px);
   opacity: 1;

@@ -235,9 +235,10 @@ if (animItems.length > 0) {
     return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
   }
   setTimeout(() => {
-
+    animOnScroll()
   }, 300);
 
-  animOnScroll()
+
 }
 
+animOnScroll()
