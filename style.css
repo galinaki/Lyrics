@@ -14,7 +14,16 @@ header{
   font-family: 'Fugaz One', cursive;
   font-size: 25px;
   margin-top: -35px;
-  height: 120px;
+  max-height: 100px;
+}
+.undertitle{
+  transform: translate(0px,120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.undertitle._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 h3{
   margin-top: -40px;
