@@ -66,6 +66,7 @@ async function beginToSearch(searchValue) {
   const data = await searchResult.json()
   console.log(data)
   displayData(data)
+  // removeText()
 }
 //display search result
 function displayData(data) {
@@ -112,7 +113,8 @@ async function showLyrics(artist, songTitle) {
     </div>
   </footer>`
   } catch (error) {
-    displayErrorMessage
+    displayErrorMessage()
+
   }
 
   document.getElementById("likeSign").onclick = like
@@ -133,19 +135,19 @@ async function showLyrics(artist, songTitle) {
 
 
 function removeText() {
-  lyrics.innerText = ""
+  result.innerText = ""
 }
 
 function displayErrorMessage() {
   const errorMessage = document.createElement("h4")
   errorMessage.innerText = `Check your typing and try again`
-  lyrics.appendChild(errorMessage)
+  result.appendChild(errorMessage)
   const errorGif = document.createElement("img")
   errorGif.src = "https://cdn.dribbble.com/users/1175431/screenshots/6188233/404-error-dribbble-800x600.gif"
   errorGif.alt = "404 error"
   errorGif.style.display = "block"
   errorGif.style.margin = "0 auto"
-  lyrics.appendChild(errorGif)
+  result.appendChild(errorGif)
 }
 
 
